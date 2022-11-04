@@ -18,4 +18,3 @@ It will be single-player based.  Player will not be able to take a loan if their
 7. Ask player to hit or stand
 8. Annouce winner - If player wins add bet to their wallet
 9. Ask player if they want to play again
-
