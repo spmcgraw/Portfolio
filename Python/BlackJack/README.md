@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# Portfolio
-Repository to store portfolio projects
-=======
 # BlackJack
 
 Author: spmcgraw
@@ -22,4 +18,4 @@ It will be single-player based.  Player will not be able to take a loan if their
 7. Ask player to hit or stand
 8. Annouce winner - If player wins add bet to their wallet
 9. Ask player if they want to play again
->>>>>>> c47f2ac61245597c4c1dd2fb6c62cee07775e8f2
+
