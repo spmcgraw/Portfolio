@@ -15,3 +15,7 @@ Default canonical triage labels (`needs-triage`, `needs-info`, `ready-for-agent`
 ### Domain docs
 
 Single-context: `CONTEXT.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+
+### Project board (Finance Intelligence)
+
+Issues for work under `finance-close-intelligence-platform/` are labelled `finance-close` and tracked on the **Finance Intelligence** GitHub Project, with Status set per its state (Backlog/Ready/In Progress/Done). See `docs/agents/project-board.md`.
