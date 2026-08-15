@@ -25,18 +25,20 @@ When creating an issue while working under `finance-close-intelligence-platform/
 | `Backlog`     | Blocked, or not yet prioritized (the default)      |
 | `Ready`       | Unblocked and ready to start                       |
 | `In Progress` | Actively being worked                              |
+| `In Review`   | Work submitted on a PR that is in review           |
 | `Done`        | Closed / completed                                 |
 
 Set Status when the state changes: move to `Ready` once an issue is unblocked and
 scoped, to `In Progress` when work starts (typically alongside `gh issue edit <n>
---add-assignee @me`), and let closing the issue drive `Done`.
+--add-assignee @me`), to `In Review` when the PR is opened, and let closing the
+issue drive `Done`.
 
 ## Setting status with `gh`
 
 `gh project` commands require the `project` scope. If you hit
 `missing required scopes [read:project]` or `[project]`, run once:
 
-```
+```bash
 gh auth refresh -s project
 ```
 
@@ -80,8 +82,8 @@ gh project item-add <project-number> --owner spmcgraw \
 These live on the Project itself, not in this repo:
 
 1. **Status field** — ensure the Status single-select has options
-   `Backlog`, `Ready`, `In Progress`, `Done` (add `Backlog` / `Ready` if the board
-   still has the default `Todo`/`In Progress`/`Done`).
+   `Backlog`, `Ready`, `In Progress`, `In Review`, `Done` (add `Backlog` / `Ready` /
+   `In Review` if the board still has the default `Todo`/`In Progress`/`Done`).
 2. **Workflows** (Project → ••• → *Workflows*):
    - *Auto-add to project* → filter `is:issue label:finance-close` → enable.
    - *Item added to project* → set **Status = Backlog**.
