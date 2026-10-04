@@ -9,7 +9,7 @@
 The platform is a small, conventional analytics stack chosen for clarity and portfolio credibility rather than scale:
 
 | Layer | Technology | Responsibility |
-|---|---|---|
+| --- | --- | --- |
 | Synthetic data generation | **Python** | Produce realistic close data (entries, reconciliations, tasks, owners) with intentional messiness. |
 | Storage & relational model | **PostgreSQL** | Hold the close data model; enforce keys and types; the single source of truth. |
 | Analytics | **SQL views** (in PostgreSQL) | Turn the raw model into close-health, reconciliation, activity, ownership, and data-quality signals. |
@@ -22,7 +22,7 @@ PostgreSQL is the engine for the relational model and the analytical views. It's
 
 ## How data flows
 
-```
+```text
 Python generator  ──▶  data/raw  ──▶  load into PostgreSQL  ──▶  analytical SQL views
                                               │                          │
                                               ▼                          ▼
